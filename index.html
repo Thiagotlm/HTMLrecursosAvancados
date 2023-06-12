@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="base.css">
+    <link rel="script" href="animação.js">
+    <title>HTML Recursos especiais</title>
+</head>
+<body> <!--Select Box-->
+    <h1>Select box</h1>
+    <select name="browsers">
+        <option value="#">Selecione um navegador</option>
+        <option value="Chrome">Google Chrome</option>
+        <option value="Firefox">Mozila Firefox</option>
+        <option value="Microsoft Edge">Microsoft Edge</option>
+        <option value="Safari">Safari</option>
+        <option value="Opera">Opera</option>
+    </select><hr><br>
+
+    <!--Usando a tag DATALIST (precisa sugerir de onde ele irá puxar as informações. Se faz através da tag "list=sugestão")-->
+    <h1>Datalist</h1>
+    <input list="browsers" type="search" name="search">
+    <datalist id="browsers">
+        <option> Google Chrome</option>
+        <option>Mozila Firefox</option>
+        <option>Microsoft Edge</option>
+        <option>Safari</option>
+        <option>Opera</option>
+    </datalist><br><hr>
+
+    <!--Tag KBD para mostrar no texto uma referência a tecla de computador-->
+    <H1>Usando KBD</H1>
+    <p>Para saber mais sobre a tag kbd precione a tecla <kbd>CTRL</kbd>+ <kbd>L</kbd></p>
+    <h1>Tag para colocar o texto com a mesma fonte e espaçamento que se usa no código</h1>
+    <p>Para trocar o fundo de um elemento, utilize o comando <code>background-color</code>.</p>
+    <h1>Tag para escrever algum tipo de exemplo de codificação</h1>
+    <p>Usamos o comando "pre" quando precisamos colocar em um texto, exemplos de código:</p>
+    <pre>
+        form {
+            border: solid 1px;
+            width: 400px;
+            height: 200px;
+            border-radius: 1px;
+        }     
+    </pre><p></p>
+
+    <!--Usando a tag DETAILS-->
+    <h1>Tag details e summary!</h1>
+    <details title="Clique aqui!">
+        <summary>Como troco a cor de fundo de um elemento no HTML?</summary>
+        <p>Para executar esta ação, utilize comendo <code> background-color</code> no CSS.</p>
+    </details><p></p>
+
+    <!--Usando as tags meter e a progress-->
+    <h1>Usando as tags meter e progress.</h1>
+
+    <meter max="100" min="0" value="30"></meter><br>
+
+    <progress id="progress" max="100" min="0" value="80"></progress>
+    <script>
+     <!--   var progress = document.getElementById('progress');
+        const interval = setInterval(() =>{
+            progress.value += 10;
+            if (progress.value >= 100){
+                alert('Carregamento efetuado com sucesso!')
+                clearInterval(interval);
+            }          
+        }, 1000);-->
+        
+        
+    </script> 
+</body>
+</html>
